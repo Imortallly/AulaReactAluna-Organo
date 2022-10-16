@@ -1,0 +1,15 @@
+.lista-suspensa select {
+    background-color: #FFF;
+    box-shadow: 8px 8px 16px rgba(0, 0 ,0, 0.08);
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 24px;
+}
+.lista-suspensa {
+    display: block;
+    margin-bottom: 8px;
+    margin-left: 23px;
+    margin-right: 23px;
+    font-size: 24px;
+}
