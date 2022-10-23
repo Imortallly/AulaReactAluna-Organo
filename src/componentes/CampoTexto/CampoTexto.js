@@ -4,7 +4,6 @@ import './CampoTexto.css'
 function CampoTexto (props) {
     const PlaceholderMod = `${props.placeholder}...`
 
-    // let valor = 'joao vitor'
     
     function aoDigitado (evento) {
         props.aoAlterado(evento.target.value)

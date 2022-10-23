@@ -3,10 +3,14 @@ import { useState } from 'react';
 import Banner from './componentes/Banner/banner';
 import Formulario from './componentes/Formulario/Formulario';
 import Time from './componentes/Time/Time';
+import Rodape from './componentes/Rodape/Rodape';
 
 function App() {
 
   const times = [
+    {
+      nome:'-Selecione-',
+    },
     {
       nome:'Programação',
       corPrimaria:'#57C278',
@@ -57,7 +61,7 @@ function App() {
       <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)} />
       
       {times.map(time => <Time key={time.nome} nome={time.nome} corPrimaria={time.corPrimaria} corSecundaria={time.corSecundaria} colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)} />)}
-
+      <Rodape />
 
     </div>
   );
