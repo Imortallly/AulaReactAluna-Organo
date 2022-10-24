@@ -7,10 +7,11 @@
     border-radius: 10px 10px 0px 0px;
 }
 .colaborador img {
-    width: 100px;
-    border-radius: 50%;
+    width: 230px;
+    border-radius: 10%;
     position: relative;
     bottom: -50px;
+    border: 1px solid black;
 }
 
 .colaborador .rodape {

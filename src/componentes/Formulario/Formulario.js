@@ -29,7 +29,7 @@ function Formulario(props) {
         <section className="formulario">
             <form onSubmit={aoSalvar}>
                 <CampoTexto obrigatorio={true} label="Nome" placeholder="Digite o nome do anime ou personagem" valor={nome} aoAlterado={valor => setNome(valor)}/>
-                <CampoTexto obrigatorio={true} label="Cargo" placeholder="Digite sua descrição" valor={cargo} aoAlterado={valor => setCargo(valor)}/>
+                <CampoTexto obrigatorio={true} label="Descrição" placeholder="Digite sua descrição" valor={cargo} aoAlterado={valor => setCargo(valor)}/>
                 <CampoTexto label="Imagem" placeholder="Digite seu endereço da imagem" valor={imagem} aoAlterado={valor => setImagem(valor)}/>
                 <ListaSuspensa obrigatorio={true} label="Categoria" itens={props.times} valor={time} aoAlterado={valor => setTime(valor)}/>
                 <Botao>Criar Card</Botao>
